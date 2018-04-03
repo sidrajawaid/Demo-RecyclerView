@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:src="@drawable/color_brown"
+                android:id="@+id/albumimage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:text="dddd"
+                android:id="@+id/albumname"
+                android:layout_width="310sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/albumimage"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="dddd"
+                android:id="@+id/numberofsongs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/albumname"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/options"
+                android:layout_toRightOf="@+id/albumname"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/albumimage"
+                android:src="@drawable/ic_more_vert_black_24dp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
